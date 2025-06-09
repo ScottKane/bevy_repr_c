@@ -346,6 +346,9 @@ web = [
 
 hotpatching = ["bevy_app/hotpatching", "bevy_ecs/hotpatching"]
 
+# Enable C style struct representation to allow passing built-in types over FFI
+repr_c = ["bevy_transform/repr_c", "bevy_time/repr_c"]
+
 [dependencies]
 # bevy (no_std)
 bevy_app = { path = "../bevy_app", version = "0.16.0-dev", default-features = false, features = [

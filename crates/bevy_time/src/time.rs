@@ -189,6 +189,7 @@ use {
 /// ```
 #[derive(Resource, Debug, Copy, Clone)]
 #[cfg_attr(feature = "bevy_reflect", derive(Reflect), reflect(Resource, Default))]
+#[cfg_attr(feature = "repr_c", repr(C))]
 pub struct Time<T: Default = ()> {
     context: T,
     wrap_period: Duration,

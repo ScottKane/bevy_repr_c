@@ -46,6 +46,9 @@ critical-section = [
   "bevy_app/critical-section",
 ]
 
+# Enable C style struct representation to allow passing built-in types over FFI
+repr_c = []
+
 [dependencies]
 # bevy
 bevy_app = { path = "../bevy_app", version = "0.16.0-dev", default-features = false }

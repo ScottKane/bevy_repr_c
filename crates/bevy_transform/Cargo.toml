@@ -93,6 +93,9 @@ alloc = ["serde?/alloc"]
 ## Uses the `libm` maths library instead of the one provided in `std` and `core`.
 libm = ["bevy_math/libm"]
 
+# Enable C style struct representation to allow passing built-in types over FFI
+repr_c = []
+
 [lints]
 workspace = true
 
